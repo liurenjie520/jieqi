@@ -29,7 +29,7 @@ jobs:
 
 
     - name: '开始运行bd.py'
-      run: python aaa.py
+      run: python shengcehngcsv24.py
     - name: commit1
       run: |
         git config --global user.email 1438457833@qq.com
