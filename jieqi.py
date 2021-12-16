@@ -73,7 +73,7 @@ def jq(num):#从当前时间开始连续输出未来n个节气的时间
         fen=d[4]
         fen=str(fen)
         txfen = d[4]
-        txfen = txfen - 8
+        txfen = txfen
         txfen = "{0:02d}".format(txfen)
         txfen = str(txfen)
         miao=d[5]
