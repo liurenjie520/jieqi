@@ -65,15 +65,23 @@ def jq(num):#从当前时间开始连续输出未来n个节气的时间
         # nyr="2233"
 
         shi=d[3]
+        txshi = d[3]
+        txshi=txshi-8
+        txshi="{0:02d}".format(txshi)
+        txshi=str(txshi)
         shi=str(shi)
         fen=d[4]
         fen=str(fen)
+        txfen = d[4]
+        txfen = txfen - 8
+        txfen = "{0:02d}".format(txfen)
+        txfen = str(txfen)
         miao=d[5]
         miao=int(miao)
 
         miao=str(miao)
         shijian=shi+"时"+fen+"分"+miao+"秒"
-        tixintime =shi+fen
+        tixintime =txshi+txfen
         shijian=str(shijian)
         zh="('"+nyra+"', '"+jieqii+"', '"+"今天"+shijian+"是"+jieqii+"。"+"', '"+tixintime+"'),"
 
