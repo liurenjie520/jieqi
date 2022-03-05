@@ -1,4 +1,4 @@
-import jieiq
+import jieqi
 
 def panduan(jq):
     jq=jq
