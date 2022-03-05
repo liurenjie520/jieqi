@@ -1,6 +1,7 @@
 from ephem import *
 import math
 import datetime
+import ifjieqi
 #24节气
 jieqi=["春分","清明","谷雨","立夏","小满","芒种",\
        "夏至","小暑","大暑","立秋","处暑","白露",\
@@ -83,7 +84,8 @@ def jq(num):#从当前时间开始连续输出未来n个节气的时间
         shijian=shi+"时"+fen+"分"+miao+"秒"
         tixintime =txshi+txfen
         shijian=str(shijian)
-        zh="('"+nyra+"', '"+jieqii+"', '"+"今天"+shijian+"是"+jieqii+"。"+"', '"+tixintime+"'),"
+        bz=ifjieqi.panduan(jieqii)
+        zh="('"+nyra+"', '"+jieqii+"', '"+"今天"+shijian+"是"+jieqii+"。"+bz+"', '"+tixintime+"'),"
 
 
 
